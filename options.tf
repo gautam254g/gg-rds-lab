@@ -10,12 +10,12 @@ resource "aws_db_option_group" "rds-options-grp" {
     version                        = "1.0"
   }
 
- 
+ /*
   option {
     option_name                    = "TDE"
     port                           = 0
    }
- 
+ */
   option {
     option_name                    = "STATSPACK"
     port                           = 0
