@@ -1,7 +1,7 @@
 # provider
 region            = "us-east-1"
 # database
-  identifier                          = "rds-gglpf11"
+  identifier                          = "rdsgglpf11"
   apply_immediately                   = true
   engine                              = "oracle-se2"
   engine_version                      = "12.2.0.1.ru-2020-01.rur-2020-01.r1"
