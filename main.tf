@@ -1,5 +1,5 @@
 terraform {
-  backend "remote { 
+  backend "remote" { 
   hostname = "terraform.io"
   oraganization = "gg-labs"
   workspaces = {
