@@ -1,3 +1,13 @@
+terraform {
+  backend "remote { 
+  hostname = "terraform.io"
+  oraganization = "gg-labs"
+  workspaces = {
+    prefix = "gg-rds-lab"
+  }
+ }
+}
+
 provider "aws" {
  region = "us-east-1"
  version = "~> 2.7"
