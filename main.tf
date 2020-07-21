@@ -3,7 +3,7 @@ terraform {
   hostname = "terraform.io"
   oraganization = "gg-labs"
   workspaces = {
-    prefix = "gg-rds-lab"
+    name = "gg-rds-lab"
   }
  }
 }
