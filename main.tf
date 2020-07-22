@@ -13,7 +13,7 @@ provider "aws" {
   version = "~> 2.0"
   region  = "us-east-1"
 }
-resource "aws_db_instance" "default" {
+resource "aws_db_instance" "test-rds" {
    identifier                          = "rdsgglpf11"
   apply_immediately                   = true
   engine                              = "oracle-se2"
@@ -32,6 +32,6 @@ resource "aws_db_instance" "default" {
   maintenance_window                  = "Sun:02:00-Sun:06:00"
   deletion_protection                 = false
   backup_retention_period             = 1
-  cpm_backup                          = ""
+  ##cpm_backup                          = ""
  snapshot_identifier                 = ""
 }
