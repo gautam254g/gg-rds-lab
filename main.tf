@@ -32,12 +32,7 @@ resource "aws_db_instance" "test-rds" {
   license_model                       = "bring-your-own-license"
   storage_type                        = "gp2"
   allocated_storage                   =  25
-  instance_class                      = "db.t3.small"
-   name                              = "GGLPF11"
-  username                            = "RDSSYSTEM"
-  port                                = 1521
-  ##az                                  = "us-east-1b"
-  multi_az                            = false
+   multi_az                            = false
   parameter_group_name                = "GG-oracle-se2-12-2-par-group"
   option_group_name                   = "GG-oracle-se2-12-2-opt-group"
   maintenance_window                  = "Sun:02:00-Sun:06:00"
