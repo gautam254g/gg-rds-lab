@@ -22,7 +22,7 @@ resource "aws_db_instance" "test-rds" {
   storage_type                        = "gp2"
   allocated_storage                   =  25
   instance_class                      = "db.t3.small"
-  db_name                              = "GGLPF11"
+   name                              = "GGLPF11"
   username                            = "RDSSYSTEM"
   port                                = 1521
   identifier                          = "rdsgglpf11"
@@ -43,14 +43,4 @@ resource "aws_db_instance" "test-rds" {
   maintenance_window                  = "Sun:02:00-Sun:06:00"
   deletion_protection                 = false
   backup_retention_period             = 1
-  cpm_backup                          = ""
- snapshot_identifier                 = ""az                                  = "us-east-1b"
-  multi_az                            = false
-  parameter_group_name                = "GG-oracle-se2-12-2-par-group"
-  option_group_name                   = "GG-oracle-se2-12-2-opt-group"
-  maintenance_window                  = "Sun:02:00-Sun:06:00"
-  deletion_protection                 = false
-  backup_retention_period             = 1
-  ##cpm_backup                          = ""
- snapshot_identifier                 = ""
-}
+  }
