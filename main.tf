@@ -2,6 +2,7 @@ terraform {
   backend "remote" { 
   hostname = "app.terraform.io"
   organization = "gg-labs"
+  
   workspaces  {
     name = "gg-rds-lab"
   }
@@ -22,6 +23,7 @@ resource "aws_db_instance" "default" {
   instance_class         = var.instance_class
   name                   = var.db_name
   username               = var.username
-  password               =  file("../rdspw/pwfile.txt")
+ ## password               =  file("../rdspw/pwfile.txt")
+  password                 = "temp123"
   skip_final_snapshot = true
 }
