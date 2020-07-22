@@ -10,9 +10,9 @@ terraform {
 }
 
 provider "aws" {
- region = "us-east-1"
- version = "~> 2.7"
- }
+  version = "~> 2.0"
+  region  = "us-east-1"
+}
 resource "aws_db_instance" "default" {
    identifier             = var.identifier
   allocated_storage      =  var.allocated_storage
