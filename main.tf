@@ -10,9 +10,8 @@ terraform {
 }
 
 provider "aws" {
- # version = "~> 2.0"
+  version = "~> 2.0"
   region  = "us-east-1"
-  AWS_SHARED_CREDENTIALS_FILE = "/c/Users/gouta/.aws/credentials"
 }
 resource "aws_instance" "web_server" {
  ami = "ami-b374d5a5"
