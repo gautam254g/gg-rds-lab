@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "aws" {
-  version = "~> 2.0"
+ # version = "~> 2.0"
   region  = "us-east-1"
   shared_credentials_file = "/c/Users/gouta/.aws/credentials"
 }
