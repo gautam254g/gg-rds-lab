@@ -1,8 +1,9 @@
+
 terraform {
   backend "remote" { 
   hostname = "app.terraform.io"
   organization = "gg-labs"
-  
+  region = "us-east-1"    
   workspaces  {
     name = "gg-rds-lab"
   }
