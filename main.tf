@@ -29,7 +29,7 @@ resource "aws_db_instance" "mydb1" {
   multi_az                 = false
   name                     = "mydb1"
   parameter_group_name     = "mydbparamgroup1" # if you have tuned it
-  password                 = "${trimspace(file("/c/Gautam_Office/AWS/Terraform/Labs/pwfile.txt"))}"
+  password                 = " trimspace(file("/c/Gautam_Office/AWS/Terraform/Labs/pwfile.txt"))
   port                     = 5432
   publicly_accessible      = true
   storage_encrypted        = true # you should always do this
